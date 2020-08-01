@@ -9,7 +9,9 @@ function style () {
     return gulp.src('./src/sass/**/*.sass')
             .pipe(sourcemaps.init())
             .pipe(sass().on('error', sass.logError))
-            .pipe(autoprefixer())
+            .pipe(autoprefixer({
+                grid: true
+            }))
             .pipe(sourcemaps.write('./'))
             .pipe(gulp.dest('./docs/css'))
             .pipe(browserSync.stream())

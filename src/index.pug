@@ -7,5 +7,39 @@ html(lang="en")
         link(rel="stylesheet", href="css/style.css")
     body
         header.header
+            .circle.circle_small
+            .circle.circle_big
+            img.header-img(src="img/header-img.png", alt="")
             a.header-logo(href="#")
-            //- a.header-logo+nav.header-nav>a
+                img(src="img/logo.png", alt="")
+            nav.header-nav
+                a.header-nav__link(href="#") Услуги
+                a.header-nav__link(href="#") Наши работы
+                a.header-nav__link(href="#") Наши модели
+                a.header-nav__link(href="#") О нас
+                a.header-nav__link(href="#") Вакансии
+                a.header-nav__link(href="#") Контакты  
+            .header-contacts
+                a.header-contacts__link.header-contacts__phone(href="#") 8 800 123-65-54
+                a.header-contacts__link.header-contacts__callback(href="#") заказать звонок  
+            .header-text
+                h1.header-title 
+                    |Проведем ваш<br>
+                    |праздник под ключ!
+                span.header-subtitle 
+                    |Подберем любой персонал и организуем<br>
+                    |мероприятия любой сложности.
+                .header-buttons 
+                    a.button(href="#") Заказать персонал
+                    a.link.header-buttons__link(href="#") Узнать больше     
+                .arrow
+                    button.arrow.arrow__left
+                        img(src="img/arrow-left.png", alt="")
+                    button.arrow.arrow__right
+                        img(src="img/arrow-right.png", alt="")
+                .thumbs
+                    a.thumbs__link(href="#") Промоутеры 
+                    a.thumbs__link(href="#") Промо модели
+                    a.thumbs__link(href="#") Стендистки
+                    a.thumbs__link(href="#") Консультанты
+                    a.thumbs__link(href="#") Хостес
