@@ -44,11 +44,12 @@ body
         top: -80px
         width: 800px
         height: 800px
-.header
+.container
     position: relative
-    overflow: hidden
     display: grid
     grid-template-columns: 2fr 5fr 3fr
+    
+.header
     // grid-template-areas: "header-logo header-nav header-contacts" ". header-text ."
     grid-template-rows: 2fr 10fr
     grid-column-gap: 20px
@@ -138,4 +139,40 @@ body
         color: $text-color
         margin-right: 10px
         font-weight: 700
+.section
+    &-title
+        grid-column: 2/3
+        grid-row: 1/2
+    &-description
+        grid-column: 2/3
+        grid-row: 2/3
+.section
+    padding: 5% 0
+    &-title
+        font-size: 55px
+    &-description
+        color: #666666
+        font-size: 22px
+        line-height: 1.6
+        font-weight: 300
+.about
+    &-row
+        griw-row: 3/4
+        grid-column: 2/3
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(25%, max-content))
+        justify-content: space-between
+    &-col
+        display: grid
+        grid-template-rows: 300px auto 50px
+        grid-auto-rows: auto
+        align-items: end
+        justify-items: center
+    &__title
+        color: #ff591f
+        font-size: 90px
+        margin: 0
+        margin-top: -70px
+    &__text
+        align-self: start
 @import  'media'
